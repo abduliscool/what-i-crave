@@ -10,3 +10,6 @@
 
 # Vite build output
 /client/dist
+
+# Editor Folders
+/.vscode
