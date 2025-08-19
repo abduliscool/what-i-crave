@@ -4,6 +4,12 @@ const connectDB = require('./db'); // Import the connection function
 // Connect to the database
 connectDB();
 
+// Middleware to parse the JSON bodies
+app.use(express.json());
+
+// Define Routes
+app.use('/api/users', require('./routes/users'));
+
 const app = express();
 const PORT = 5000;
 
